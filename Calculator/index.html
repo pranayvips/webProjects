@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapfis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="calculator.ico" />
+  </head>
+  <body>
+    <div class="container" id="one-1">
+      <button class="result-screen" id="no-history-0">
+        <p id="history">Ans = 0</p>
+        <input type="text" id="result-screen1" class="result-screen1" />
+        <!-- <p id="result-screen1">0</p> -->
+      </button>
+
+      <p id="history_text">History</p>
+      <div class="buttons" id="no-history-1">
+        <button class="upper function" id="(">(</button>
+        <button class="upper function" id="^">^</button>
+        <button class="upper function" id="%">←</button>
+        <button class="upper function" id="clear">AC</button>
+        <button class="number" id="1">1</button>
+        <button class="number" id="2">2</button>
+        <button class="number" id="3">3</button>
+        <button class="function" id="divide">÷</button>
+        <button class="number" id="4">4</button>
+        <button class="number" id="5">5</button>
+        <button class="number" id="6">6</button>
+        <button class="function" id="multiply">×</button>
+        <button class="number" id="7">7</button>
+        <button class="number" id="8">8</button>
+        <button class="number" id="9">9</button>
+        <button class="function" id="minus">-</button>
+        <button class="number" id="0">0</button>
+        <button class="number" id=".">.</button>
+        <button class="function" id="plus">+</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+    <div class="history-screen" id="history-screen"><h2>History</h2></div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      id="history_show"
+      ;
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+      />
+    </svg>
+
+    <script src="cal.js"></script>
+  </body>
+</html>
