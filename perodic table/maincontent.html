@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perodic Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,200;1,300&family=Gruppo&family=PT+Mono&family=Shadows+Into+Light&family=Dancing+Script&family=Rajdhani:wght@300;400;500&family=Silkscreen&family=Whisper&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body style="background-color: #090b0c">
+    <div class="bg">
+      <img src="bg.jpg" alt="">
+      <h4></h4>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand"
+        href="/index.html"
+        style="color: white; font-weight: 700; font-size: 28px;letter-spacing: 1px;font-family: 'Shadows Into Light',sans-serif;"
+        >EleMentor</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" style="margin-left: 20px;">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#table-view"
+              >Table</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#list-view"
+              >List</span></a>
+          </li>
+          <li class="nav-item tab-" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#">Games</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="atomic_mass.html">Atomic Mass Numbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="about.html">About Us</a>
+          </li>
+        </ul>
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          style="
+            background-color: transparent;
+            display: inline;
+            width: 200px;
+            color: white;
+          "
+          id="search-input"
+        />
+        <button
+          class="btn btn-outline-success my-2 my-sm-0"
+          style="transition: all 1s"
+          id="search-button"
+        >
+          Search
+        </button>
+      </div>
+    </nav>
+    <hr
+      style="border-top: 1px solid #343a40;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;"
+    />
+    <h1 class="title">Periodic Table of Elements</h1>
+    <div class="tabs">
+      <p class="tab">Table</p>
+      <p class="tab">List Properties</p>
+      <p class="tab">Games</p>
+<div>
+  <button id="download-1">Learn ?</button>
+  <button id="download">Download</button>
+</div>
+    </div>
+    <hr
+      style="
+        border-top: 1px solid #343a40;
+        width: 94%;
+        margin: 0 auto;
+        margin-left: 50px;
+        margin-bottom: 20px;
+      "
+    />
+    <div class="page-table">
+      <img src="in.png" class="demo" />
+      <div class="table">
+        <!-- <div class="ele 1">
+        <div>
+           write the element name 
+          <p>1</p>
+           write the mass number here 
+          <p>1.0080</p>
+        </div>
+         write the symbol 
+        <h1>H</h1>
+         write the name of the element 
+        <h2>Hydrogen</h2>
+         write the group 
+        <h3>Non Metal</h3>
+      </div> -->
+      </div>
+      <div class="table table-bottom"></div>
+      <div class="table-properties">
+        <div class="table-opts" name="Alkali">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #5c2b2c" />
+            <p>Alkali metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Alkaline">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #37385e" />
+            <p>Alkaline earth metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Transition">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a4969" />
+            <p>Transition metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Post-transition">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a4969" />
+            <p>Post-transition metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Metalloid">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #4b582c" />
+            <p>Metalloids</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Nonmetal">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #66672c" />
+            <p>Non-metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Noble">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #684f2c" />
+            <p>Noble gases</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Lanthanide">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a7172" />
+            <p>Lanthanides</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Actinide">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #3b6f5f" />
+            <p>Actinides</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Unknown">
+          <nav>
+            <input type="radio" name="opt" style="background-color: grey" />
+            <p>Unknown properties</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+      </div>
+      <div class="infos">
+        <h1>Why Arrange Elements in a Table?</h1>
+        <ul>
+          <li>
+          Seeing chemical elements arranged in the modern periodic table is as
+          familiar as seeing a map of the world, but it was not always so
+          obvious.
+        </li><li>
+          The creator of the periodic table, Dmitri Mendeleev, in 1869 began
+          collecting and sorting known properties of elements, like he was
+          playing a game, while traveling by train. He noticed that there were
+          groups of elements that exhibited similar properties, but he also
+          noticed that there were plenty of exceptions to the emerging
+          patterns.</li><li>
+          Incredibly, instead of giving up, he tried altering the measured
+          property values to better fit the patterns! He also predicted that
+          certain elements must exist which didn’t at the time – again, in an
+          effort to get the patterns in his "game" to work out.</li><li>
+          There were plenty of skeptics and it took years to gain international
+          value acceptance, but once newly-discovered elements matched the ones
+          that Mendeleev predicted, his patterns could not be dismissed. In
+          addition, some of the properties that he "fudged" were later
+          recalculated and found to be much closer to his predictions.</li>
+        </ul>
+        <h1>
+          Does the Modern Periodic Table Change? If So, How and Who Does That?
+        </h1>
+        <ul>
+          <li>The periodic table as we know it today is managed by the International
+            Union of Pure and Applied Chemistry, or IUPAC (eye-you-pack).</li>
+            <li>
+              While much of what is in the periodic table is stable and unlikely to
+              change, the IUPAC organization is responsible for deciding what needs
+              to be changed. They have created criteria for what constitutes the
+              discovery of a new element.</li>
+              <li>
+              In addition, any new element must be assigned a temporary name and
+              symbol, and if validated, given an official name. Such was the case
+              when IUPAC recently reviewed elements 113, 115, 117 and 118, and
+              decided to give them official names and symbols (goodbye, ununseptium
+              and hello, tennessine!).</li>
+              <li>
+              Atomic weights found within a periodic table one might think are
+              constant. The truth is that atomic weights have changed as a function
+              of time. Since 1899 the IUPAC Commission on Isotopic Abundances and
+              Atomic Weights (CIAAW) has been evaluating atomic weights and
+              abundances. For example, Carbon had an atomic weight of 12.00 in 1902
+              but today it is [12.0096, 12.0116]! Times sure have changed as the
+              source of the sample will determine the value.</li>
+              <li>
+              Finally, IUPAC assigns collective names (lanthanoids and actinoids)
+              and group numbering (1 to 18) and has investigated the membership of
+              the group 3 elements.</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="page-list">
+      <div class="containo"></div>
+    </div>
+    <div class="page-games">
+      <div class="ask">
+        <h1>There are two games you can play ;</h1>
+        <nav>
+          <div class="game-finder">
+            <img src="2.png" style="margin-bottom: 15px" />
+            <hr
+              style="border-top: 1px solid #343a40; width: 80%; margin: 0 auto"
+            />
+            <h1>Finder</h1>
+            <p>
+              &bull; In this you have to find a element in the perodic table.
+              <br />&bull; On Correct you will gain a score and on clicking
+              wrong one the score will be reduced.
+            </p>
+          </div>
+          <div class="game-quiz">
+            <img src="1.png" alt="" />
+            <hr
+              style="border-top: 1px solid #343a40; width: 80%; margin: 0 auto"
+            />
+            <h1>Quiz</h1>
+            <p>
+              &bull; There will be a total of 8 questions and you have to
+              attempt all questions. <br />&bull; The result will be generated
+              then and there only. <br />&bull; On every correct 4 marks will be
+              awarded and on every incorrect -1 will b deducted
+            </p>
+          </div>
+        </nav>
+      </div>
+      <div class="finder">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="finder-back"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+          />
+        </svg>
+        <div class="finder-mid">
+          <label for="lvl">Select Level:</label>
+
+          <select name="lvl" id="lvl">
+            <option value="0">Easy</option>
+            <option value="1">Hard</option>
+          </select>
+          <button id="play">Play</button>
+        </div>
+        <div class="finder-start">
+          <a id="level">Level : hard</a>
+          <h1 id="finder-guess">Hg</h1>
+          <p>Score : <span id="finder-score"></span></p>
+        </div>
+        <div class="table-finder"></div>
+        <div class="table-finder-bottom"></div>
+        <div class="rules">
+          <h2>Rules :</h2>
+          <ul>
+            <li>On top of the page an element name is shown</li>
+            <li>You have to click on the element shown in perodic table</li>
+            <li>On correct clicking you will be awarded 100 points</li>
+            <li>On every 3 seconds a 3 points will be deducted</li>
+            <li>On every wrong click -50 points will be deducted</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quiz">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="finder-back">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+          />
+        </svg>
+        <div class="ques">
+        </div>
+        <div class="q-result">
+          <h1>Total Questions</h1>
+          <p>8</p>
+          <h1>Questions Attempted</h1>
+          <p class="q-res-"></p>
+          <h1>Right / Wrong Answer</h1>
+          <p class="q-res-"></p>
+          <h1>Your Score</h1>
+          <p class="q-res-"></p>
+          <button id="re-test">Re - Test</button>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+    </div>
+    <div class="show-data">
+      <h6>Element Properties</h6>
+      <div class="below">
+        <div class="img">
+          <p class="dt">25</p>
+          <p class="dt">Mn</p>
+          <p class="dt">Manenese</p>
+          <p class="dt">Transisiton metal</p>
+        </div>
+        <div class="right">
+          <p>AtomicMass<span class="dt">1.0080</span></p>
+          <hr />
+          <p>StandardState<span class="dt"> -1</span></p>
+          <hr />
+          <p>Electron Configuration<span class="dt">1s1</span></p>
+          <hr />
+          <p>Oxidation States<span class="dt">+1</span></p>
+          <hr />
+          <p>Electronegativity<span class="dt">2.2</span></p>
+          <hr />
+          <p>Atomic Radius<span class="dt">120</span></p>
+          <hr />
+          <p>Ionization Energy<span class="dt">13.598</span></p>
+          <hr />
+          <p>Electron Affinity<span class="dt">0.754</span></p>
+          <hr />
+          <p>Melting Point<span class="dt">Gas</span></p>
+          <hr />
+          <p>Boiling Point<span class="dt">13.81</span></p>
+          <hr />
+          <p>Density<span class="dt">20.28</span></p>
+          <hr />
+          <p>Year Discovered<span class="dt">1766</span></p>
+        </div>
+        <button id="close" title="close">x</button>
+      </div>
+    </div>
+    <footer  class="d-flex flex-wrap justify-content-between align-items-center border-top"
+      style="height: 50px;">
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="text-muted">&copy; 2023 Qutaammim.Inc</span>
+      </div>
+    </footer>
+    <div class="vid"><video src="a.mp4" controls></video></div>
+    <div id="show-score">
+      <h1 class="shw">Correct</h1>
+      <p class="shw">You got +50</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="add_ele.js"></script>
+    <script src="add_ele_game.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

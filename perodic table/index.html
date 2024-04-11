@@ -1,0 +1,4024 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perodic Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,200;1,300&family=Gruppo&family=PT+Mono&family=Shadows+Into+Light&family=Dancing+Script&family=Rajdhani:wght@300;400;500&family=Silkscreen&family=Whisper&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body >
+    <div class="bg">
+      <img src="bg1.jpg" alt="">
+      <h4></h4>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <a
+        class="navbar-brand"
+        href="/index.html"
+        style="color: white; font-weight: 700; font-size: 28px;letter-spacing: 1px;font-family: 'Shadows Into Light',sans-serif;"
+        >EleMentor</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" style="margin-left: 20px;">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#table-view"
+              >Table</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#list-view"
+              >List</span></a
+            >
+          </li>
+          <li class="nav-item tab-" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#">Games</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="atomic_mass.html">Atomic Mass Numbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="about.html">About Us</a>
+          </li>
+          
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0"> -->
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          style="
+            background-color: transparent;
+            display: inline;
+            width: 200px;
+            color: white;
+          "
+          id="search-input"
+        />
+        <button
+          class="btn btn-outline-success my-2 my-sm-0"
+          style="transition: all 1s"
+          id="search-button"
+        >
+          Search
+        </button>
+        <!-- </form> -->
+      </div>
+    </nav>
+    <hr
+      style="
+        border-top: 1px solid #343a40;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      "
+    />
+    <h1 class="title">Periodic Table of Elements</h1>
+    <div class="tabs">
+      <p class="tab">Table</p>
+      <p class="tab">List Properties</p>
+      <p class="tab">Games</p>
+      <!-- <a href="https://youtu.be/fW5OfwZvaDY?t=28" target="_blank"> -->
+<div>
+
+  <button id="download-1">Learn ?</button>
+  <!-- </a> -->
+  <button id="download">Download</button>
+</div>
+    </div>
+    <hr
+      style="
+        border-top: 1px solid #343a40;
+        width: 94%;
+        margin: 0 auto;
+        margin-left: 50px;
+        margin-bottom: 20px;
+      "
+    />
+    <div class="page-table">
+      <img src="in.png" class="demo" />
+      <div class="table">
+        <!-- <div class="ele 1">
+        <div>
+           write the element name 
+          <p>1</p>
+           write the mass number here 
+          <p>1.0080</p>
+        </div>
+         write the symbol 
+        <h1>H</h1>
+         write the name of the element 
+        <h2>Hydrogen</h2>
+         write the group 
+        <h3>Non Metal</h3>
+      </div> -->
+      </div>
+      <div class="table table-bottom"></div>
+      <div class="table-properties">
+        <div class="table-opts" name="Alkali">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #5c2b2c" />
+            <p>Alkali metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Alkaline">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #37385e" />
+            <p>Alkaline earth metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Transition">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a4969" />
+            <p>Transition metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Post-transition">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a4969" />
+            <p>Post-transition metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Metalloid">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #4b582c" />
+            <p>Metalloids</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Nonmetal">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #66672c" />
+            <p>Non-metals</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Noble">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #684f2c" />
+            <p>Noble gases</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Lanthanide">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #2a7172" />
+            <p>Lanthanides</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Actinide">
+          <nav>
+            <input type="radio" name="opt" style="background-color: #3b6f5f" />
+            <p>Actinides</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+        <div class="table-opts" name="Unknown">
+          <nav>
+            <input type="radio" name="opt" style="background-color: grey" />
+            <p>Unknown properties</p>
+          </nav>
+          <p class="opt-border"></p>
+        </div>
+      </div>
+      <div class="infos">
+        <h1>Why Arrange Elements in a Table?</h1>
+        <ul>
+
+
+          <li>
+          Seeing chemical elements arranged in the modern periodic table is as
+          familiar as seeing a map of the world, but it was not always so
+          obvious.
+        </li><li>
+          The creator of the periodic table, Dmitri Mendeleev, in 1869 began
+          collecting and sorting known properties of elements, like he was
+          playing a game, while traveling by train. He noticed that there were
+          groups of elements that exhibited similar properties, but he also
+          noticed that there were plenty of exceptions to the emerging
+          patterns.</li><li>
+          Incredibly, instead of giving up, he tried altering the measured
+          property values to better fit the patterns! He also predicted that
+          certain elements must exist which didn’t at the time – again, in an
+          effort to get the patterns in his "game" to work out.</li><li>
+          There were plenty of skeptics and it took years to gain international
+          value acceptance, but once newly-discovered elements matched the ones
+          that Mendeleev predicted, his patterns could not be dismissed. In
+          addition, some of the properties that he "fudged" were later
+          recalculated and found to be much closer to his predictions.</li>
+        </ul>
+        <h1>
+          Does the Modern Periodic Table Change? If So, How and Who Does That?
+        </h1>
+        <ul>
+          <li>The periodic table as we know it today is managed by the International
+            Union of Pure and Applied Chemistry, or IUPAC (eye-you-pack).</li>
+            <li>
+              While much of what is in the periodic table is stable and unlikely to
+              change, the IUPAC organization is responsible for deciding what needs
+              to be changed. They have created criteria for what constitutes the
+              discovery of a new element.</li>
+              <li>
+              In addition, any new element must be assigned a temporary name and
+              symbol, and if validated, given an official name. Such was the case
+              when IUPAC recently reviewed elements 113, 115, 117 and 118, and
+              decided to give them official names and symbols (goodbye, ununseptium
+              and hello, tennessine!).</li>
+              <li>
+              Atomic weights found within a periodic table one might think are
+              constant. The truth is that atomic weights have changed as a function
+              of time. Since 1899 the IUPAC Commission on Isotopic Abundances and
+              Atomic Weights (CIAAW) has been evaluating atomic weights and
+              abundances. For example, Carbon had an atomic weight of 12.00 in 1902
+              but today it is [12.0096, 12.0116]! Times sure have changed as the
+              source of the sample will determine the value.</li>
+              <li>
+              Finally, IUPAC assigns collective names (lanthanoids and actinoids)
+              and group numbering (1 to 18) and has investigated the membership of
+              the group 3 elements.</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="page-list">
+      <div class="containo">
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/1 hydrogen.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>1.0080</span></p>
+            <hr />
+            <p>StandardState<span> -1</span></p>
+            <hr />
+            <p>Electron Configuration<span>1s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>120</span></p>
+            <hr />
+            <p>Ionization Energy<span>13.598</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.754</span></p>
+            <hr />
+            <p>Melting Point<span>Gas</span></p>
+            <hr />
+            <p>Boiling Point<span>13.81</span></p>
+            <hr />
+            <p>Density<span>20.28</span></p>
+            <hr />
+            <p>Year Discovered<span>1766</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/2 helium.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>4.00260</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>1s2</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>140</span></p>
+            <hr />
+            <p>Ionization Energy<span>24.587</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>0.95</span></p>
+            <hr />
+            <p>Boiling Point<span>4.22</span></p>
+            <hr />
+            <p>Density<span>0.0001785</span></p>
+            <hr />
+            <p>Year Discovered<span>1868</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/3 lithium.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>7.0</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.98</span></p>
+            <hr />
+            <p>Atomic Radius<span>182</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.392</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.618</span></p>
+            <hr />
+            <p>Melting Point<span>453.65</span></p>
+            <hr />
+            <p>Boiling Point<span>1615</span></p>
+            <hr />
+            <p>Density<span>0.534</span></p>
+            <hr />
+            <p>Year Discovered<span>1817</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/4 beryllium.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>9.012183</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1.57</span></p>
+            <hr />
+            <p>Atomic Radius<span>153</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.323</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1560</span></p>
+            <hr />
+            <p>Boiling Point<span>2744</span></p>
+            <hr />
+            <p>Density<span>1.85</span></p>
+            <hr />
+            <p>Year Discovered<span>1798</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/5 boron.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>10.81</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2 2p1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>2.04</span></p>
+            <hr />
+            <p>Atomic Radius<span>192</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.298</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.277</span></p>
+            <hr />
+            <p>Melting Point<span>2348</span></p>
+            <hr />
+            <p>Boiling Point<span>4273</span></p>
+            <hr />
+            <p>Density<span>2.37</span></p>
+            <hr />
+            <p>Year Discovered<span>1808</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/6 carbon.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>12.011</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2 2p2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.55</span></p>
+            <hr />
+            <p>Atomic Radius<span>170</span></p>
+            <hr />
+            <p>Ionization Energy<span>11.260</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.263</span></p>
+            <hr />
+            <p>Melting Point<span> -4</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>3823</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/7 nitrogen.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>14.007</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He] 2s2 2p3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>3.04</span></p>
+            <hr />
+            <p>Atomic Radius<span>155</span></p>
+            <hr />
+            <p>Ionization Energy<span>14.534</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +3</span></p>
+            <hr />
+            <p>Boiling Point<span> +2</span></p>
+            <hr />
+            <p>Density<span> +1</span></p>
+            <hr />
+            <p>Year Discovered<span>1772</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/8 oxygen.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>15.999</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2 2p4</span></p>
+            <hr />
+            <p>Oxidation States<span>-2</span></p>
+            <hr />
+            <p>Electronegativity<span>3.44</span></p>
+            <hr />
+            <p>Atomic Radius<span>152</span></p>
+            <hr />
+            <p>Ionization Energy<span>13.618</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.461</span></p>
+            <hr />
+            <p>Melting Point<span>54.36</span></p>
+            <hr />
+            <p>Boiling Point<span>90.2</span></p>
+            <hr />
+            <p>Density<span>0.001429</span></p>
+            <hr />
+            <p>Year Discovered<span>1774</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/9 f.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>18.99840316</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2 2p5</span></p>
+            <hr />
+            <p>Oxidation States<span>-1</span></p>
+            <hr />
+            <p>Electronegativity<span>3.98</span></p>
+            <hr />
+            <p>Atomic Radius<span>135</span></p>
+            <hr />
+            <p>Ionization Energy<span>17.423</span></p>
+            <hr />
+            <p>Electron Affinity<span>3.339</span></p>
+            <hr />
+            <p>Melting Point<span>53.53</span></p>
+            <hr />
+            <p>Boiling Point<span>85.03</span></p>
+            <hr />
+            <p>Density<span>0.001696</span></p>
+            <hr />
+            <p>Year Discovered<span>1670</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/10ne.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>20.180</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[He]2s2 2p6</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>154</span></p>
+            <hr />
+            <p>Ionization Energy<span>21.565</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>24.56</span></p>
+            <hr />
+            <p>Boiling Point<span>27.07</span></p>
+            <hr />
+            <p>Density<span>0.0008999</span></p>
+            <hr />
+            <p>Year Discovered<span>1898</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/11na.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>22.9897693</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.93</span></p>
+            <hr />
+            <p>Atomic Radius<span>227</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.139</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.548</span></p>
+            <hr />
+            <p>Melting Point<span>370.95</span></p>
+            <hr />
+            <p>Boiling Point<span>1156</span></p>
+            <hr />
+            <p>Density<span>0.97</span></p>
+            <hr />
+            <p>Year Discovered<span>1807</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/12mg.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>24.305</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1.31</span></p>
+            <hr />
+            <p>Atomic Radius<span>173</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.646</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>923</span></p>
+            <hr />
+            <p>Boiling Point<span>1363</span></p>
+            <hr />
+            <p>Density<span>1.74</span></p>
+            <hr />
+            <p>Year Discovered<span>1808</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/13 al.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>26.981538</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.61</span></p>
+            <hr />
+            <p>Atomic Radius<span>184</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.986</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.441</span></p>
+            <hr />
+            <p>Melting Point<span>933.437</span></p>
+            <hr />
+            <p>Boiling Point<span>2792</span></p>
+            <hr />
+            <p>Density<span>2.70</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/14 si.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>28.085</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.9</span></p>
+            <hr />
+            <p>Atomic Radius<span>210</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.152</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.385</span></p>
+            <hr />
+            <p>Melting Point<span> -4</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>1687</span></p>
+            <hr />
+            <p>Year Discovered<span>1854</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/15p.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>30.97376200</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>2.19</span></p>
+            <hr />
+            <p>Atomic Radius<span>180</span></p>
+            <hr />
+            <p>Ionization Energy<span>10.487</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.746</span></p>
+            <hr />
+            <p>Melting Point<span> -3</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>317.3</span></p>
+            <hr />
+            <p>Year Discovered<span>1669</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/16 s.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>32.07</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p4</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>2.58</span></p>
+            <hr />
+            <p>Atomic Radius<span>180</span></p>
+            <hr />
+            <p>Ionization Energy<span>10.360</span></p>
+            <hr />
+            <p>Electron Affinity<span>2.077</span></p>
+            <hr />
+            <p>Melting Point<span> -2</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>388.36</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/17 c.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>35.45</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p5</span></p>
+            <hr />
+            <p>Oxidation States<span>+7</span></p>
+            <hr />
+            <p>Electronegativity<span>3.16</span></p>
+            <hr />
+            <p>Atomic Radius<span>175</span></p>
+            <hr />
+            <p>Ionization Energy<span>12.968</span></p>
+            <hr />
+            <p>Electron Affinity<span>3.617</span></p>
+            <hr />
+            <p>Melting Point<span> +1</span></p>
+            <hr />
+            <p>Boiling Point<span> -1</span></p>
+            <hr />
+            <p>Density<span>Gas</span></p>
+            <hr />
+            <p>Year Discovered<span>1774</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/18ar.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>39.9</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ne]3s2 3p6</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>188</span></p>
+            <hr />
+            <p>Ionization Energy<span>15.760</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>83.8</span></p>
+            <hr />
+            <p>Boiling Point<span>87.3</span></p>
+            <hr />
+            <p>Density<span>0.0017837</span></p>
+            <hr />
+            <p>Year Discovered<span>1894</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/19 k.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>39.0983</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.82</span></p>
+            <hr />
+            <p>Atomic Radius<span>275</span></p>
+            <hr />
+            <p>Ionization Energy<span>4.341</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.501</span></p>
+            <hr />
+            <p>Melting Point<span>336.53</span></p>
+            <hr />
+            <p>Boiling Point<span>1032</span></p>
+            <hr />
+            <p>Density<span>0.89</span></p>
+            <hr />
+            <p>Year Discovered<span>1807</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/20 ca.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>40.08</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1</span></p>
+            <hr />
+            <p>Atomic Radius<span>231</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.113</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1115</span></p>
+            <hr />
+            <p>Boiling Point<span>1757</span></p>
+            <hr />
+            <p>Density<span>1.54</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/21s.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>44.95591</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.36</span></p>
+            <hr />
+            <p>Atomic Radius<span>211</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.561</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.188</span></p>
+            <hr />
+            <p>Melting Point<span>1814</span></p>
+            <hr />
+            <p>Boiling Point<span>3109</span></p>
+            <hr />
+            <p>Density<span>2.99</span></p>
+            <hr />
+            <p>Year Discovered<span>1879</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/22ti.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>47.867</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.54</span></p>
+            <hr />
+            <p>Atomic Radius<span>187</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.828</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.079</span></p>
+            <hr />
+            <p>Melting Point<span> +2</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>1941</span></p>
+            <hr />
+            <p>Year Discovered<span>1791</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/23v.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>50.9415</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>1.63</span></p>
+            <hr />
+            <p>Atomic Radius<span>179</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.746</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.525</span></p>
+            <hr />
+            <p>Melting Point<span> +3</span></p>
+            <hr />
+            <p>Boiling Point<span> +2</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1801</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/24 c.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>51.996</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]3d5 4s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>1.66</span></p>
+            <hr />
+            <p>Atomic Radius<span>189</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.767</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.666</span></p>
+            <hr />
+            <p>Melting Point<span> +2</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>2180</span></p>
+            <hr />
+            <p>Year Discovered<span>1797</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/25 mn.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>54.93804</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d5</span></p>
+            <hr />
+            <p>Oxidation States<span>+7</span></p>
+            <hr />
+            <p>Electronegativity<span>1.55</span></p>
+            <hr />
+            <p>Atomic Radius<span>197</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.434</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +3</span></p>
+            <hr />
+            <p>Boiling Point<span> +2</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1774</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/25 mn.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>55.84</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d6</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.83</span></p>
+            <hr />
+            <p>Atomic Radius<span>194</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.902</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.163</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1811</span></p>
+            <hr />
+            <p>Density<span>3134</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/26 fe.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>58.93319</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d7</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.88</span></p>
+            <hr />
+            <p>Atomic Radius<span>192</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.881</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.661</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1768</span></p>
+            <hr />
+            <p>Density<span>3200</span></p>
+            <hr />
+            <p>Year Discovered<span>1735</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/27 co.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>58.693</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d8</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.91</span></p>
+            <hr />
+            <p>Atomic Radius<span>163</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.640</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.156</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1728</span></p>
+            <hr />
+            <p>Density<span>3186</span></p>
+            <hr />
+            <p>Year Discovered<span>1751</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/28 ni.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>63.55</span></p>
+            <hr />
+            <p>StandardState<span> +1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s1 3d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1.9</span></p>
+            <hr />
+            <p>Atomic Radius<span>140</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.726</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.228</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1357.77</span></p>
+            <hr />
+            <p>Density<span>2835</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/29 cu.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>65.4</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1.65</span></p>
+            <hr />
+            <p>Atomic Radius<span>139</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.394</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>692.68</span></p>
+            <hr />
+            <p>Boiling Point<span>1180</span></p>
+            <hr />
+            <p>Density<span>7.134</span></p>
+            <hr />
+            <p>Year Discovered<span>1746</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/30 zn.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>69.723</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.81</span></p>
+            <hr />
+            <p>Atomic Radius<span>187</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.999</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.3</span></p>
+            <hr />
+            <p>Melting Point<span>302.91</span></p>
+            <hr />
+            <p>Boiling Point<span>2477</span></p>
+            <hr />
+            <p>Density<span>5.91</span></p>
+            <hr />
+            <p>Year Discovered<span>1875</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/31 ga.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>72.63</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.01</span></p>
+            <hr />
+            <p>Atomic Radius<span>211</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.900</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.35</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1211.4</span></p>
+            <hr />
+            <p>Density<span>3106</span></p>
+            <hr />
+            <p>Year Discovered<span>1886</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/32 ge.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>74.92159</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>2.18</span></p>
+            <hr />
+            <p>Atomic Radius<span>185</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.815</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.81</span></p>
+            <hr />
+            <p>Melting Point<span> -3</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>1090</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/33 as.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>78.97</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p4</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>2.55</span></p>
+            <hr />
+            <p>Atomic Radius<span>190</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.752</span></p>
+            <hr />
+            <p>Electron Affinity<span>2.021</span></p>
+            <hr />
+            <p>Melting Point<span> -2</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>493.65</span></p>
+            <hr />
+            <p>Year Discovered<span>1817</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/34 se.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>79.90</span></p>
+            <hr />
+            <p>StandardState<span> +1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p5</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>2.96</span></p>
+            <hr />
+            <p>Atomic Radius<span>183</span></p>
+            <hr />
+            <p>Ionization Energy<span>11.814</span></p>
+            <hr />
+            <p>Electron Affinity<span>3.365</span></p>
+            <hr />
+            <p>Melting Point<span> -1</span></p>
+            <hr />
+            <p>Boiling Point<span>Liquid</span></p>
+            <hr />
+            <p>Density<span>265.95</span></p>
+            <hr />
+            <p>Year Discovered<span>1826</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/35 br.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>83.80</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Ar]4s2 3d10 4p6</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span>3</span></p>
+            <hr />
+            <p>Atomic Radius<span>202</span></p>
+            <hr />
+            <p>Ionization Energy<span>14.000</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>115.79</span></p>
+            <hr />
+            <p>Boiling Point<span>119.93</span></p>
+            <hr />
+            <p>Density<span>0.003733</span></p>
+            <hr />
+            <p>Year Discovered<span>1898</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/36 kr.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>85.468</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.82</span></p>
+            <hr />
+            <p>Atomic Radius<span>303</span></p>
+            <hr />
+            <p>Ionization Energy<span>4.177</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.468</span></p>
+            <hr />
+            <p>Melting Point<span>312.46</span></p>
+            <hr />
+            <p>Boiling Point<span>961</span></p>
+            <hr />
+            <p>Density<span>1.53</span></p>
+            <hr />
+            <p>Year Discovered<span>1861</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/37 rb.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>87.62</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>0.95</span></p>
+            <hr />
+            <p>Atomic Radius<span>249</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.695</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1050</span></p>
+            <hr />
+            <p>Boiling Point<span>1655</span></p>
+            <hr />
+            <p>Density<span>2.64</span></p>
+            <hr />
+            <p>Year Discovered<span>1790</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/38 sr.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>88.90584</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.22</span></p>
+            <hr />
+            <p>Atomic Radius<span>219</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.217</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.307</span></p>
+            <hr />
+            <p>Melting Point<span>1795</span></p>
+            <hr />
+            <p>Boiling Point<span>3618</span></p>
+            <hr />
+            <p>Density<span>4.47</span></p>
+            <hr />
+            <p>Year Discovered<span>1794</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/39 y.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>91.22</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.33</span></p>
+            <hr />
+            <p>Atomic Radius<span>186</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.634</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.426</span></p>
+            <hr />
+            <p>Melting Point<span>2128</span></p>
+            <hr />
+            <p>Boiling Point<span>4682</span></p>
+            <hr />
+            <p>Density<span>6.52</span></p>
+            <hr />
+            <p>Year Discovered<span>1789</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/40 zr.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>92.90637</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1 4d4</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>1.6</span></p>
+            <hr />
+            <p>Atomic Radius<span>207</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.759</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.893</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>2750</span></p>
+            <hr />
+            <p>Density<span>5017</span></p>
+            <hr />
+            <p>Year Discovered<span>1801</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/41 nb.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>95.95</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1 4d5</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>2.16</span></p>
+            <hr />
+            <p>Atomic Radius<span>209</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.092</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.746</span></p>
+            <hr />
+            <p>Melting Point<span>2896</span></p>
+            <hr />
+            <p>Boiling Point<span>4912</span></p>
+            <hr />
+            <p>Density<span>10.2</span></p>
+            <hr />
+            <p>Year Discovered<span>1778</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/42 mo.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>96.90636</span></p>
+            <hr />
+            <p>StandardState<span> +6</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d5</span></p>
+            <hr />
+            <p>Oxidation States<span>+7</span></p>
+            <hr />
+            <p>Electronegativity<span>1.9</span></p>
+            <hr />
+            <p>Atomic Radius<span>209</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.28</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.55</span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>2430</span></p>
+            <hr />
+            <p>Year Discovered<span>1937</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/43 tc.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>101.1</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1 4d7</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>207</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.361</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.05</span></p>
+            <hr />
+            <p>Melting Point<span>2607</span></p>
+            <hr />
+            <p>Boiling Point<span>4423</span></p>
+            <hr />
+            <p>Density<span>12.1</span></p>
+            <hr />
+            <p>Year Discovered<span>1827</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/44 ru.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>102.9055</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1 4d8</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>2.28</span></p>
+            <hr />
+            <p>Atomic Radius<span>195</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.459</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.137</span></p>
+            <hr />
+            <p>Melting Point<span>2237</span></p>
+            <hr />
+            <p>Boiling Point<span>3968</span></p>
+            <hr />
+            <p>Density<span>12.4</span></p>
+            <hr />
+            <p>Year Discovered<span>1803</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/45 rh.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>106.42</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]4d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>202</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.337</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.557</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1828.05</span></p>
+            <hr />
+            <p>Density<span>3236</span></p>
+            <hr />
+            <p>Year Discovered<span>1803</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/45 rh.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>107.868</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s1 4d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>1.93</span></p>
+            <hr />
+            <p>Atomic Radius<span>172</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.576</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.302</span></p>
+            <hr />
+            <p>Melting Point<span>1234.93</span></p>
+            <hr />
+            <p>Boiling Point<span>2435</span></p>
+            <hr />
+            <p>Density<span>10.501</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/46 pd.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>112.41</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>1.69</span></p>
+            <hr />
+            <p>Atomic Radius<span>158</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.994</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>594.22</span></p>
+            <hr />
+            <p>Boiling Point<span>1040</span></p>
+            <hr />
+            <p>Density<span>8.69</span></p>
+            <hr />
+            <p>Year Discovered<span>1817</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/47 ag.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>114.818</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.78</span></p>
+            <hr />
+            <p>Atomic Radius<span>193</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.786</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.3</span></p>
+            <hr />
+            <p>Melting Point<span>429.75</span></p>
+            <hr />
+            <p>Boiling Point<span>2345</span></p>
+            <hr />
+            <p>Density<span>7.31</span></p>
+            <hr />
+            <p>Year Discovered<span>1863</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/48 cd.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>118.71</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.96</span></p>
+            <hr />
+            <p>Atomic Radius<span>217</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.344</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.2</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>505.08</span></p>
+            <hr />
+            <p>Density<span>2875</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/49 in.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>121.760</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>2.05</span></p>
+            <hr />
+            <p>Atomic Radius<span>206</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.64</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.07</span></p>
+            <hr />
+            <p>Melting Point<span> -3</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>903.78</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/50 sn.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>127.6</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p4</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>2.1</span></p>
+            <hr />
+            <p>Atomic Radius<span>206</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.010</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.971</span></p>
+            <hr />
+            <p>Melting Point<span> -2</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>722.66</span></p>
+            <hr />
+            <p>Year Discovered<span>1782</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/51 sb.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>126.9045</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p5</span></p>
+            <hr />
+            <p>Oxidation States<span>+7</span></p>
+            <hr />
+            <p>Electronegativity<span>2.66</span></p>
+            <hr />
+            <p>Atomic Radius<span>198</span></p>
+            <hr />
+            <p>Ionization Energy<span>10.451</span></p>
+            <hr />
+            <p>Electron Affinity<span>3.059</span></p>
+            <hr />
+            <p>Melting Point<span> +1</span></p>
+            <hr />
+            <p>Boiling Point<span> -1</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1811</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/52 te.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>131.29</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Kr]5s2 4d10 5p6</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span>2.6</span></p>
+            <hr />
+            <p>Atomic Radius<span>216</span></p>
+            <hr />
+            <p>Ionization Energy<span>12.130</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>161.36</span></p>
+            <hr />
+            <p>Boiling Point<span>165.03</span></p>
+            <hr />
+            <p>Density<span>0.005887</span></p>
+            <hr />
+            <p>Year Discovered<span>1898</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/53 i.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>132.9054520</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.79</span></p>
+            <hr />
+            <p>Atomic Radius<span>343</span></p>
+            <hr />
+            <p>Ionization Energy<span>3.894</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.472</span></p>
+            <hr />
+            <p>Melting Point<span>301.59</span></p>
+            <hr />
+            <p>Boiling Point<span>944</span></p>
+            <hr />
+            <p>Density<span>1.93</span></p>
+            <hr />
+            <p>Year Discovered<span>1860</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/54 xe.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>137.33</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>0.89</span></p>
+            <hr />
+            <p>Atomic Radius<span>268</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.212</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1000</span></p>
+            <hr />
+            <p>Boiling Point<span>2170</span></p>
+            <hr />
+            <p>Density<span>3.62</span></p>
+            <hr />
+            <p>Year Discovered<span>1808</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/55 cs.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>138.9055</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 5d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.1</span></p>
+            <hr />
+            <p>Atomic Radius<span>240</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.577</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.5</span></p>
+            <hr />
+            <p>Melting Point<span>1191</span></p>
+            <hr />
+            <p>Boiling Point<span>3737</span></p>
+            <hr />
+            <p>Density<span>6.15</span></p>
+            <hr />
+            <p>Year Discovered<span>1839</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>140.116</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f1 5d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.12</span></p>
+            <hr />
+            <p>Atomic Radius<span>235</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.539</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.5</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1071</span></p>
+            <hr />
+            <p>Density<span>3697</span></p>
+            <hr />
+            <p>Year Discovered<span>1803</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/57 la.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>140.90766</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f3</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.13</span></p>
+            <hr />
+            <p>Atomic Radius<span>239</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.464</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1204</span></p>
+            <hr />
+            <p>Boiling Point<span>3793</span></p>
+            <hr />
+            <p>Density<span>6.77</span></p>
+            <hr />
+            <p>Year Discovered<span>1885</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/58 ce.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>144.24</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f4</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.14</span></p>
+            <hr />
+            <p>Atomic Radius<span>229</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.525</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1294</span></p>
+            <hr />
+            <p>Boiling Point<span>3347</span></p>
+            <hr />
+            <p>Density<span>7.01</span></p>
+            <hr />
+            <p>Year Discovered<span>1885</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/59 pr.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>144.91276</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f5</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>236</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.55</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1315</span></p>
+            <hr />
+            <p>Boiling Point<span>3273</span></p>
+            <hr />
+            <p>Density<span>7.26</span></p>
+            <hr />
+            <p>Year Discovered<span>1945</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images/60 nd.png" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>150.4</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f6</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.17</span></p>
+            <hr />
+            <p>Atomic Radius<span>229</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.644</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1347</span></p>
+            <hr />
+            <p>Density<span>2067</span></p>
+            <hr />
+            <p>Year Discovered<span>1879</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>151.964</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f7</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>233</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.670</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1095</span></p>
+            <hr />
+            <p>Density<span>1802</span></p>
+            <hr />
+            <p>Year Discovered<span>1901</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>157.2</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f7 5d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>237</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.150</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1586</span></p>
+            <hr />
+            <p>Boiling Point<span>3546</span></p>
+            <hr />
+            <p>Density<span>7.90</span></p>
+            <hr />
+            <p>Year Discovered<span>1880</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>158.92535</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f9</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>221</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.864</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1629</span></p>
+            <hr />
+            <p>Boiling Point<span>3503</span></p>
+            <hr />
+            <p>Density<span>8.23</span></p>
+            <hr />
+            <p>Year Discovered<span>1843</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>162.500</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f10</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.22</span></p>
+            <hr />
+            <p>Atomic Radius<span>229</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.939</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1685</span></p>
+            <hr />
+            <p>Boiling Point<span>2840</span></p>
+            <hr />
+            <p>Density<span>8.55</span></p>
+            <hr />
+            <p>Year Discovered<span>1886</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>164.93033</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f11</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.23</span></p>
+            <hr />
+            <p>Atomic Radius<span>216</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.022</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1747</span></p>
+            <hr />
+            <p>Boiling Point<span>2973</span></p>
+            <hr />
+            <p>Density<span>8.80</span></p>
+            <hr />
+            <p>Year Discovered<span>1878</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>167.26</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f12</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.24</span></p>
+            <hr />
+            <p>Atomic Radius<span>235</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.108</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1802</span></p>
+            <hr />
+            <p>Boiling Point<span>3141</span></p>
+            <hr />
+            <p>Density<span>9.07</span></p>
+            <hr />
+            <p>Year Discovered<span>1843</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>168.93422</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f13</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.25</span></p>
+            <hr />
+            <p>Atomic Radius<span>227</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.184</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1818</span></p>
+            <hr />
+            <p>Boiling Point<span>2223</span></p>
+            <hr />
+            <p>Density<span>9.32</span></p>
+            <hr />
+            <p>Year Discovered<span>1879</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>173.05</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>242</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.254</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1092</span></p>
+            <hr />
+            <p>Density<span>1469</span></p>
+            <hr />
+            <p>Year Discovered<span>1878</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>174.9668</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.27</span></p>
+            <hr />
+            <p>Atomic Radius<span>221</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.426</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1936</span></p>
+            <hr />
+            <p>Boiling Point<span>3675</span></p>
+            <hr />
+            <p>Density<span>9.84</span></p>
+            <hr />
+            <p>Year Discovered<span>1907</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>178.49</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>212</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.825</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>2506</span></p>
+            <hr />
+            <p>Boiling Point<span>4876</span></p>
+            <hr />
+            <p>Density<span>13.3</span></p>
+            <hr />
+            <p>Year Discovered<span>1923</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>180.9479</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>1.5</span></p>
+            <hr />
+            <p>Atomic Radius<span>217</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.89</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.322</span></p>
+            <hr />
+            <p>Melting Point<span>3290</span></p>
+            <hr />
+            <p>Boiling Point<span>5731</span></p>
+            <hr />
+            <p>Density<span>16.4</span></p>
+            <hr />
+            <p>Year Discovered<span>1802</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>183.84</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d4</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>2.36</span></p>
+            <hr />
+            <p>Atomic Radius<span>210</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.98</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.815</span></p>
+            <hr />
+            <p>Melting Point<span>3695</span></p>
+            <hr />
+            <p>Boiling Point<span>5828</span></p>
+            <hr />
+            <p>Density<span>19.3</span></p>
+            <hr />
+            <p>Year Discovered<span>1783</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>186.207</span></p>
+            <hr />
+            <p>StandardState<span> +6</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d5</span></p>
+            <hr />
+            <p>Oxidation States<span>+7</span></p>
+            <hr />
+            <p>Electronegativity<span>1.9</span></p>
+            <hr />
+            <p>Atomic Radius<span>217</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.88</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.15</span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span>3459</span></p>
+            <hr />
+            <p>Year Discovered<span>1925</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>190.2</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d6</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>216</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.7</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.1</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>3306</span></p>
+            <hr />
+            <p>Density<span>5285</span></p>
+            <hr />
+            <p>Year Discovered<span>1803</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>192.22</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d7</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>202</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.1</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.565</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>2719</span></p>
+            <hr />
+            <p>Density<span>4701</span></p>
+            <hr />
+            <p>Year Discovered<span>1803</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>195.08</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s1 4f14 5d9</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.28</span></p>
+            <hr />
+            <p>Atomic Radius<span>209</span></p>
+            <hr />
+            <p>Ionization Energy<span>9</span></p>
+            <hr />
+            <p>Electron Affinity<span>2.128</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>2041.55</span></p>
+            <hr />
+            <p>Density<span>4098</span></p>
+            <hr />
+            <p>Year Discovered<span>1735</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>196.96657</span></p>
+            <hr />
+            <p>StandardState<span> +1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s1 4f14 5d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>2.54</span></p>
+            <hr />
+            <p>Atomic Radius<span>166</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.226</span></p>
+            <hr />
+            <p>Electron Affinity<span>2.309</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1337.33</span></p>
+            <hr />
+            <p>Density<span>3129</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>200.59</span></p>
+            <hr />
+            <p>StandardState<span> +1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>2</span></p>
+            <hr />
+            <p>Atomic Radius<span>209</span></p>
+            <hr />
+            <p>Ionization Energy<span>10.438</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Liquid</span></p>
+            <hr />
+            <p>Boiling Point<span>234.32</span></p>
+            <hr />
+            <p>Density<span>629.88</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>204.383</span></p>
+            <hr />
+            <p>StandardState<span> +1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.62</span></p>
+            <hr />
+            <p>Atomic Radius<span>196</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.108</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.2</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>577</span></p>
+            <hr />
+            <p>Density<span>1746</span></p>
+            <hr />
+            <p>Year Discovered<span>1861</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>207</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2.33</span></p>
+            <hr />
+            <p>Atomic Radius<span>202</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.417</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.36</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>600.61</span></p>
+            <hr />
+            <p>Density<span>2022</span></p>
+            <hr />
+            <p>Year Discovered<span>Ancient</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>208.98040</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p3</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>2.02</span></p>
+            <hr />
+            <p>Atomic Radius<span>207</span></p>
+            <hr />
+            <p>Ionization Energy<span>7.289</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.946</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>544.55</span></p>
+            <hr />
+            <p>Density<span>1837</span></p>
+            <hr />
+            <p>Year Discovered<span>1753</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>208.98243</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p4</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>2</span></p>
+            <hr />
+            <p>Atomic Radius<span>197</span></p>
+            <hr />
+            <p>Ionization Energy<span>8.417</span></p>
+            <hr />
+            <p>Electron Affinity<span>1.9</span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>527</span></p>
+            <hr />
+            <p>Density<span>1235</span></p>
+            <hr />
+            <p>Year Discovered<span>1898</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>209.98715</span></p>
+            <hr />
+            <p>StandardState<span> 5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p5</span></p>
+            <hr />
+            <p>Oxidation States<span>7</span></p>
+            <hr />
+            <p>Electronegativity<span>2.2</span></p>
+            <hr />
+            <p>Atomic Radius<span>202</span></p>
+            <hr />
+            <p>Ionization Energy<span>9.5</span></p>
+            <hr />
+            <p>Electron Affinity<span>2.8</span></p>
+            <hr />
+            <p>Melting Point<span> 3</span></p>
+            <hr />
+            <p>Boiling Point<span> 1</span></p>
+            <hr />
+            <p>Density<span> -1</span></p>
+            <hr />
+            <p>Year Discovered<span>1940</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>222.01758</span></p>
+            <hr />
+            <p>StandardState<span>Gas</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Xe]6s2 4f14 5d10 6p6</span></p>
+            <hr />
+            <p>Oxidation States<span>0</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span>220</span></p>
+            <hr />
+            <p>Ionization Energy<span>10.745</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>202</span></p>
+            <hr />
+            <p>Boiling Point<span>211.45</span></p>
+            <hr />
+            <p>Density<span>0.00973</span></p>
+            <hr />
+            <p>Year Discovered<span>1900</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>223.01973</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s1</span></p>
+            <hr />
+            <p>Oxidation States<span>+1</span></p>
+            <hr />
+            <p>Electronegativity<span>0.7</span></p>
+            <hr />
+            <p>Atomic Radius<span>348</span></p>
+            <hr />
+            <p>Ionization Energy<span>3.9</span></p>
+            <hr />
+            <p>Electron Affinity<span>0.47</span></p>
+            <hr />
+            <p>Melting Point<span>300</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1939</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>226.02541</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+2</span></p>
+            <hr />
+            <p>Electronegativity<span>0.9</span></p>
+            <hr />
+            <p>Atomic Radius<span>283</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.279</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>973</span></p>
+            <hr />
+            <p>Boiling Point<span>1413</span></p>
+            <hr />
+            <p>Density<span>5</span></p>
+            <hr />
+            <p>Year Discovered<span>1898</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>227.02775</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.1</span></p>
+            <hr />
+            <p>Atomic Radius<span>260</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.17</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1324</span></p>
+            <hr />
+            <p>Boiling Point<span>3471</span></p>
+            <hr />
+            <p>Density<span>10.07</span></p>
+            <hr />
+            <p>Year Discovered<span>1899</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>232.038</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 6d2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>237</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.08</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>2023</span></p>
+            <hr />
+            <p>Boiling Point<span>5061</span></p>
+            <hr />
+            <p>Density<span>11.72</span></p>
+            <hr />
+            <p>Year Discovered<span>1828</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>231.03588</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f2 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span>1.5</span></p>
+            <hr />
+            <p>Atomic Radius<span>243</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.89</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1845</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1913</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>238.0289</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f3 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>1.38</span></p>
+            <hr />
+            <p>Atomic Radius<span>240</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.194</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span> +3</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1789</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>237.048172</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f4 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>1.36</span></p>
+            <hr />
+            <p>Atomic Radius<span>221</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.266</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span> +3</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1940</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>244.06420</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f6</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>1.28</span></p>
+            <hr />
+            <p>Atomic Radius<span>243</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.06</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span> +3</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1940</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>243.061380</span></p>
+            <hr />
+            <p>StandardState<span> +5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f7</span></p>
+            <hr />
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>244</span></p>
+            <hr />
+            <p>Ionization Energy<span>5.993</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +4</span></p>
+            <hr />
+            <p>Boiling Point<span> +3</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1944</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>247.07035</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f7 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>245</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.02</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1618</span></p>
+            <hr />
+            <p>Boiling Point<span>3400</span></p>
+            <hr />
+            <p>Density<span>13.51</span></p>
+            <hr />
+            <p>Year Discovered<span>1944</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>247.07031</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f9</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>244</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.23</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1323</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1949</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>251.07959</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f10</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>245</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.30</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1173</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1950</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>252.0830</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f11</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span>245</span></p>
+            <hr />
+            <p>Ionization Energy<span>6.42</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1133</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1952</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>257.09511</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn] 5f12 7s2</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span>6.50</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1800</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1952</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>258.09843</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f13</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span>6.58</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1100</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1955</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>259.10100</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span>6.65</span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Solid</span></p>
+            <hr />
+            <p>Boiling Point<span>1100</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1957</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>266.120</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d1</span></p>
+            <hr />
+            <p>Oxidation States<span>+3</span></p>
+            <hr />
+            <p>Electronegativity<span>1.3</span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>1900</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1961</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>267.122</span></p>
+            <hr />
+            <p>StandardState<span>Solid</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d2</span></p>
+            <hr />
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span></span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1964</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>268.126</span></p>
+            <hr />
+            <p>StandardState<span> 4</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d3</span></p>
+            <hr />
+            <p>Oxidation States<span>5</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 3</span></p>
+            <hr />
+            <p>Boiling Point<span>Solid</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1967</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>269.128</span></p>
+            <hr />
+            <p>StandardState<span> 5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d4</span></p>
+            <hr />
+            <p>Oxidation States<span>6</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 4</span></p>
+            <hr />
+            <p>Boiling Point<span> 3</span></p>
+            <hr />
+            <p>Density<span> 0</span></p>
+            <hr />
+            <p>Year Discovered<span>1974</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>270.133</span></p>
+            <hr />
+            <p>StandardState<span> 5</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d5</span></p>
+            <hr />
+            <p>Oxidation States<span>7</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 4</span></p>
+            <hr />
+            <p>Boiling Point<span> 3</span></p>
+            <hr />
+            <p>Density<span>Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1976</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>269.1336</span></p>
+            <hr />
+            <p>StandardState<span> 6</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d6</span></p>
+            <hr />
+            <p>Oxidation States<span>8</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 5</span></p>
+            <hr />
+            <p>Boiling Point<span> 4</span></p>
+            <hr />
+            <p>Density<span> 3</span></p>
+            <hr />
+            <p>Year Discovered<span>1984</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>277.154</span></p>
+            <hr />
+            <p>StandardState<span> 8</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d7 calculated</span></p>
+            <hr />
+            <p>Oxidation States<span>9</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 6</span></p>
+            <hr />
+            <p>Boiling Point<span> 4</span></p>
+            <hr />
+            <p>Density<span> 3</span></p>
+            <hr />
+            <p>Year Discovered<span>1982</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>282.166</span></p>
+            <hr />
+            <p>StandardState<span> 6</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d8 predicted</span></p>
+            <hr />
+            <p>Oxidation States<span>8</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 4</span></p>
+            <hr />
+            <p>Boiling Point<span> 2</span></p>
+            <hr />
+            <p>Density<span> 0</span></p>
+            <hr />
+            <p>Year Discovered<span>1994</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>282.169</span></p>
+            <hr />
+            <p>StandardState<span> 3</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d9 predicted</span></p>
+            <hr />
+            <p>Oxidation States<span>5</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 1</span></p>
+            <hr />
+            <p>Boiling Point<span> -1</span></p>
+            <hr />
+            <p>Density<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>1994</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>286.179</span></p>
+            <hr />
+            <p>StandardState<span> 1</span></p>
+            <hr />
+            <p>Electron Configuration<span>[Rn]7s2 5f14 6d10 predicted</span></p>
+            <hr />
+            <p>Oxidation States<span>2</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> 0</span></p>
+            <hr />
+            <p>Boiling Point<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>1996</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>286.182</span></p>
+            <hr />
+            <p>StandardState<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]5f14 6d10 7s2 7p1 predicted</span>
+            </p>
+            <p>Oxidation States<span></span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span></span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>2004</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>290.192</span></p>
+            <hr />
+            <p>StandardState<span> 4</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]7s2 7p2 5f14 6d10 predicted</span>
+            </p>
+            <p>Oxidation States<span>6</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>2</span></p>
+            <hr />
+            <p>Boiling Point<span> 1</span></p>
+            <hr />
+            <p>Density<span> 0</span></p>
+            <hr />
+            <p>Year Discovered<span>1998</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>290.196</span></p>
+            <hr />
+            <p>StandardState<span> 1</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]7s2 7p3 5f14 6d10 predicted</span>
+            </p>
+            <p>Oxidation States<span>3</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>Boiling Point<span></span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>2003</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>293.205</span></p>
+            <hr />
+            <p>StandardState<span> +2</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]7s2 7p4 5f14 6d10 predicted</span>
+            </p>
+            <p>Oxidation States<span>+4</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> -2</span></p>
+            <hr />
+            <p>Boiling Point<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>Density<span></span></p>
+            <hr />
+            <p>Year Discovered<span>2000</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>294.211</span></p>
+            <hr />
+            <p>StandardState<span> +3</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]7s2 7p5 5f14 6d10 predicted</span>
+            </p>
+            <p>Oxidation States<span>+5</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +1</span></p>
+            <hr />
+            <p>Boiling Point<span> -1</span></p>
+            <hr />
+            <p>Density<span>Expected to be a Solid</span></p>
+            <hr />
+            <p>Year Discovered<span>2010</span></p>
+          </div>
+        </div>
+        <h5 class="tit-s">p</h5>
+        <div class="ele-s">
+          <div class="img"><img src="images" alt="" /></div>
+          <div class="info">
+            <p>AtomicMass<span>295.216</span></p>
+            <hr />
+            <p>StandardState<span> +4</span></p>
+            <hr />
+            <p>
+              Electron Configuration<span>[Rn]7s2 7p6 5f14 6d10 predicted</span>
+            </p>
+            <p>Oxidation States<span>+6</span></p>
+            <hr />
+            <p>Electronegativity<span></span></p>
+            <hr />
+            <p>Atomic Radius<span></span></p>
+            <hr />
+            <p>Ionization Energy<span></span></p>
+            <hr />
+            <p>Electron Affinity<span></span></p>
+            <hr />
+            <p>Melting Point<span> +2</span></p>
+            <hr />
+            <p>Boiling Point<span> +1</span></p>
+            <hr />
+            <p>Density<span> 0</span></p>
+            <hr />
+            <p>Year Discovered<span>2006</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-games">
+      <div class="ask">
+        <h1>There are two games you can play ;</h1>
+        <nav>
+          <div class="game-finder">
+            <img src="2.png" style="margin-bottom: 15px" />
+            <hr
+              style="border-top: 1px solid #343a40; width: 80%; margin: 0 auto"
+            />
+            <h1>Finder</h1>
+            <p>
+              &bull; In this you have to find a element in the perodic table.
+              <br />&bull; On Correct you will gain a score and on clicking
+              wrong one the score will be reduced.
+            </p>
+          </div>
+          <div class="game-quiz">
+            <img src="1.png" alt="" />
+            <hr
+              style="border-top: 1px solid #343a40; width: 80%; margin: 0 auto"
+            />
+            <h1>Quiz</h1>
+            <p>
+              &bull; There will be a total of 8 questions and you have to
+              attempt all questions. <br />&bull; The result will be generated
+              then and there only. <br />&bull; On every correct 4 marks will be
+              awarded and on every incorrect -1 will b deducted
+            </p>
+          </div>
+        </nav>
+      </div>
+      <div class="finder">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="finder-back"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+          />
+        </svg>
+        <div class="finder-mid">
+          <label for="lvl">Select Level:</label>
+
+          <select name="lvl" id="lvl">
+            <option value="0">Easy</option>
+            <option value="1">Hard</option>
+          </select>
+          <button id="play">Play</button>
+        </div>
+        <div class="finder-start">
+          <a id="level">Level : hard</a>
+          <h1 id="finder-guess">Hg</h1>
+          <p>Score : <span id="finder-score"></span></p>
+        </div>
+        <div class="table-finder"></div>
+        <div class="table-finder-bottom"></div>
+        <div class="rules">
+          <h2>Rules :</h2>
+          <ul>
+            <li>On top of the page an element name is shown</li>
+            <li>You have to click on the element shown in perodic table</li>
+            <li>On correct clicking you will be awarded 100 points</li>
+            <li>On every 3 seconds a 3 points will be deducted</li>
+            <li>On every wrong click -50 points will be deducted</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quiz">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="finder-back"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+          />
+        </svg>
+        <div class="ques">
+          <h2>Answer the following Questions</h2>
+          <!-- question-1 -->
+          <h1>
+            Q. Which one of the following properties increases with an increase
+            in atomic number in both the first and seventh groups of the modern
+            periodic table?
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q1" />
+            <a>Reactivity with water.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q1" />
+            <a>Atomic size.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q1" />
+            <a>Oxidation properties.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q1" />
+            <a>None of above.</a>
+            <br />
+          </div>
+          <!-- question-2 -->
+          <h1>
+            Q. Which of the following group of the modern periodic table
+            contains halogen?
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q2" />
+            <a>Group 1.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q2" />
+            <a>Group 2.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q2" />
+            <a>Group 17.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q2" />
+            <a>None of the above.</a>
+            <br />
+          </div>
+          <!-- question-3 -->
+          <h1>
+            Q. Which of the following is the most electropositive halogen?
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q3" />
+            <a> Fluorine.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q3" />
+            <a> Chlorine.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q3" />
+            <a>Bromine.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q3" />
+            <a> None of the above.</a>
+            <br />
+          </div>
+          <!-- question-5 -->
+          <h1>
+            Q. How does the metallic character of elements change when we go up
+            in the modern periodic table?
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q5" />
+            <a> Increases.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q5" />
+            <a> Decreases.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q5" />
+            <a> Remains the same.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q5" />
+            <a>First decreases then increases.</a>
+            <br />
+          </div>
+          <!-- question-6 -->
+          <h1>
+            Q. Which of the following non-metals exist in a liquid state at room
+            temperature?
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q6" />
+            <a>Mercury.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q6" />
+            <a>Bromine.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q6" />
+            <a>Iodine.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q6" />
+            <a>None of the above.</a>
+            <br />
+          </div>
+          <!-- question-7 -->
+          <h1>Q. How many element groups are there?</h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>7.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>11.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>16.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>18.</a>
+            <br />
+          </div>
+          <!-- question-8 -->
+          <h1>Q. Who is the creator of the periodic table?</h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q8" />
+            <a>john newlands.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q8" />
+            <a>Dimitri Mendeleev.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q8" />
+            <a>Henry Moseley.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q8" />
+            <a>None of above.</a>
+            <br />
+          </div>
+          <!-- question-9 -->
+          <h1>
+            Q._______________discovered the number of protons in the nucleus of
+            each atom.
+          </h1>
+          <div>
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>Dimitri Mendeleev.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>john newlands.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>Henry Moseley.</a>
+            <br />
+            <input class="quiz-options" type="radio" name="q7" />
+            <a>John Dalton.</a>
+            <br />
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+        <div class="q-result">
+          <h1>Total Questions</h1>
+          <p>8</p>
+          <h1>Questions Attempted</h1>
+          <p class="q-res-"></p>
+          <h1>Right / Wrong Answer</h1>
+          <p class="q-res-"></p>
+          <h1>Your Score</h1>
+          <p class="q-res-"></p>
+          <button id="re-test">Re - Test</button>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+    </div>
+    <div class="show-data">
+      <h6>Element Properties</h6>
+      <div class="below">
+        <div class="img">
+          <p class="dt">25</p>
+          <p class="dt">Mn</p>
+          <p class="dt">Manenese</p>
+          <p class="dt">Transisiton metal</p>
+        </div>
+        <div class="right">
+          <p>AtomicMass<span class="dt">1.0080</span></p>
+          <hr />
+          <p>StandardState<span class="dt"> -1</span></p>
+          <hr />
+          <p>Electron Configuration<span class="dt">1s1</span></p>
+          <hr />
+          <p>Oxidation States<span class="dt">+1</span></p>
+          <hr />
+          <p>Electronegativity<span class="dt">2.2</span></p>
+          <hr />
+          <p>Atomic Radius<span class="dt">120</span></p>
+          <hr />
+          <p>Ionization Energy<span class="dt">13.598</span></p>
+          <hr />
+          <p>Electron Affinity<span class="dt">0.754</span></p>
+          <hr />
+          <p>Melting Point<span class="dt">Gas</span></p>
+          <hr />
+          <p>Boiling Point<span class="dt">13.81</span></p>
+          <hr />
+          <p>Density<span class="dt">20.28</span></p>
+          <hr />
+          <p>Year Discovered<span class="dt">1766</span></p>
+        </div>
+        <button id="close" title="close">x</button>
+      </div>
+    </div>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center border-top"
+      style="height: 50px;"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="text-muted">&copy; 2023 Elementor.Inc</span>
+      </div>
+    </footer>
+    <div class="vid"><video src="a.mp4" controls></video></div>
+    <div id="show-score">
+      <h1 class="shw">Correct</h1>
+      <p class="shw">You got +50</p>
+      <!-- <button class="shw">Okay !</button> -->
+    </div>
+    <script src="script.js"></script>
+    <script src="add_ele.js"></script>
+    <script src="add_ele_game.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

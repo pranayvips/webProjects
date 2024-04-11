@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #periodic-table {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        gap: 1px;
+        max-width: 800px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .element {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .element:hover {
+        background-color: #f0f0f0;
+      }
+
+      .element span {
+        z-index: 1;
+      }
+
+      .element:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #3498db; /* Default background color */
+        opacity: 0.7;
+        z-index: 0;
+      }
+
+      .element:nth-child(2n):before {
+        background-color: #2ecc71; /* Even column background color */
+      }
+
+      .element:nth-child(9n):before,
+      .element:nth-child(9n + 1):before {
+        background-color: #e74c3c; /* Transition metals background color */
+      }
+    </style>
+    <script src="https://unpkg.com/periodic-table-api"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch the periodic table data
+        fetch("https://unpkg.com/periodic-table-api/elements.json")
+          .then((response) => response.json())
+          .then((data) => {
+            // Create the periodic table dynamically
+            const periodicTable = document.getElementById("periodic-table");
+
+            data.forEach((element) => {
+              const elementDiv = document.createElement("div");
+              elementDiv.className = "element";
+              elementDiv.dataset.element = element.name;
+
+              const elementSymbol = document.createElement("span");
+              elementSymbol.textContent = element.symbol;
+
+              elementDiv.appendChild(elementSymbol);
+              periodicTable.appendChild(elementDiv);
+            });
+          })
+          .catch((error) =>
+            console.error("Error fetching periodic table data:", error)
+          );
+      });
+    </script>
+    <!-- Add this script tag to include the periodic-table-api library -->
+    <script src="https://unpkg.com/periodic-table-api"></script>
+
+    <title>Periodic Table</title>
+  </head>
+  <body>
+    <div id="periodic-table"></div>
+  </body>
+</html>

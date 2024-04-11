@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+}
+:root {
+  --background: #090b0c;
+}
+.containo {
+  overflow-y: auto;
+  overflow-x: auto;
+  height: calc(100vh - 100px);
+}
+.containo {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+.containo::-webkit-scrollbar {
+  width: 8px;
+}
+.containo::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}
+.containo h5 {
+  color: white;
+  text-align: center;
+}
+.ele-s {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  border: 0.5px solid #868e96;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+.ele-s .img {
+  height: 400px;
+  background-color: yellow;
+  overflow: hidden;
+}
+.ele-s .img img {
+  width: 100%;
+}
+.ele-s .info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.ele-s .info p {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  margin: 0 auto;
+}
+.ele-s .info p span {
+  color: #80ccff;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.ele-s .info hr {
+  margin: 0;
+  border: none;
+  outline: none;
+  border-top: 1px solid #495057;
+  /* width: 90%; */
+}

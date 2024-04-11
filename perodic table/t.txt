@@ -1,0 +1,1 @@
+Anchor tag, Heading tags, Paragraph tags, Video, Img, Link, Style, Script, Input, Button, Span, Div, Nav

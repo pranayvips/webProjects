@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perodic Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,200;1,300&family=Gruppo&family=PT+Mono&family=Shadows+Into+Light&family=Dancing+Script&family=Rajdhani:wght@300;400;500&family=Silkscreen&family=Whisper&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+  </head>
+  <body style="background-color: #090b0c">
+    <div class="bg">
+      <img src="about.jpg" id="bgw">
+      <h4></h4>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <a
+        class="navbar-brand"
+        href="/index.html"
+        style="color: white; font-weight: 700; font-size: 28px;letter-spacing: 1px;font-family: 'Shadows Into Light',sans-serif;"
+        >EleMentor</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" style="margin-left: 20px;">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#table-view"
+              >Table</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link tab-" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#list-view"
+              >List</span></a
+            >
+          </li>
+          <li class="nav-item tab-" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="#">Games</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="atomic_mass.html">Atomic Mass Numbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="transition: all 0.5s;font-size: 18px;letter-spacing: .5px;margin-right: 10px;font-family: 'Dancing Script',sans-serif;" href="about.html">About Us</a>
+          </li>
+          
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0"> -->
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          style="
+            background-color: transparent;
+            display: inline;
+            width: 200px;
+            color: white;
+          "
+          id="search-input"
+        />
+        <button
+          class="btn btn-outline-success my-2 my-sm-0"
+          style="transition: all 1s"
+          id="search-button"
+        >
+          Search
+        </button>
+        <!-- </form> -->
+      </div>
+    </nav>
+    <hr
+      style="
+        border-top: 1px solid #343a40;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      "
+    />
+    <div class="about">
+      <h1 class="font">About Developers</h1>
+      <div>
+        <h2 class="font name">Ansh</h2>
+        <h2 class="font name">Bhavye</h2>
+        <h2 class="font name">Harsh</h2>
+        <h2 class="font name">Pranay</h2>
+        <h2 class="font name">Swaraj</h2>
+      </div>
+    </div>
+    <div class="tools">
+      <h1>Things We Used</h1>
+      <div class="lang">
+        <h2>Languages</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Js</li>
+        </ul>
+      </div>
+      <div class="otl">
+        <h2>Other Tools</h2>
+        <ul type="none">
+          <li>Vs Code : </li>
+          <li>Brave : </li>
+        </ul>
+      </div>
+      
+    </div>
+    <style>
+      .dev-info{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: none;
+        z-index: 100;
+      }
+
+      .dev-info .black{
+        border: 1px solid white;
+        border-radius: 8px;
+        width: 50%;
+        height: 55%;
+        background-color: rgba(1, 0, 9, 0.84);
+        margin-left: 50vw;
+        margin-top: 50vh;
+        transform: translate(-50%,-50%);
+        padding: 30px 50px;
+        position: relative;
+      }
+      .dev-info .black li{
+        margin-left: 50px;
+      }
+      .dev-info .black .skila{
+        display: flex;
+      }
+      .dev-info .black .skila li{
+        border: 1px solid cyan;
+        padding: 5px 15px;
+        color: cyan;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 1s;
+        font-family: 'Gruppo',sans-serif;
+      }
+      .dev-info .black .skila li:hover{
+        background-color: cyan;
+        color: black;
+      }
+      .dev-info .black .infa{
+        display: flex;
+        flex-direction: column;
+      }
+      .dev-info .black .infa li{
+        font-family: 'Gruppo',sans-serif;
+        font-size: 18px;
+      }
+      .dev-info .black .infa li span{
+        font-family: 'Gruppo',sans-serif;
+        font-size: 17px;
+        letter-spacing: 0.8px;
+        cursor: default;
+        transition: all 1s;
+      }
+      .dev-info .black .infa li span:hover{
+        color: cyan;
+      }
+      .dev-info .black h4{
+        color: white;
+        font-family: 'Gruppo',sans-serif;
+        font-size: 28px;
+      }
+      .dev-info .black h4 span{
+        color: white;
+        font-family: 'Gruppo',sans-serif;
+        font-size: 25px;
+        transition: all 1s;
+        cursor: default;
+      }
+      .dev-info .black h4 span:hover{
+        color: cyan;
+      }
+      .dev-info .black button{
+        width: 120px;
+        margin-left: 41%;
+        outline: none;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        transition: all 1s;
+        border-radius: 4px;
+        padding: 10px 25px;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'PT Mono',sans-serif;
+      }
+      .dev-info .black button:hover{
+        color: black;
+        background-color: white;
+      }
+
+    </style>
+    <div class="dev-info">
+      <div class="black">
+        <h1 align="center" style="color: white;font-size: 35px;font-family: 'Josefin Slab',sans-serif;" class="kota">Name</h1>
+        <h2 style="color: white;font-size: 28px;font-family: 'Gruppo',sans-serif;">Skills :</h2>
+        <ul class="skila">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+        <h3 style="color: white;font-family: 'Gruppo',sans-serif;">Contact Info :</h3>
+        <ul class="infa">
+          <li style="color: white;">Mob no. : <span class="kota">7011417423</span></li>
+          <li style="color: white;">Email : <span class="kota">prasadpranay2005@gmail.com</span></li>
+        </ul>
+        <h4>Education : <span class="kota">army publick school</span></h4>
+        <button id="clos">Okay !</button>
+      </div>
+    </div>
+    <style>
+      .navbar{
+        background-color: rgba(4, 1, 41, 0.5);
+      }
+      #bgw{
+        width: 100%;
+        height: auto;
+        filter: brightness(80%);
+      }
+      .font{
+        font-family: 'Josefin Slab',sans-serif;
+      }
+      .about h1{
+        font-size: 35px;
+        text-align: center;
+        color: cyan;
+        margin-bottom: 20px;
+      }
+      .about div{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+      }
+      .about div h2{
+        border: 1px solid cyan;
+        border-radius: 25px;
+        padding: 35px 50px;
+        transition: all 1s;
+        color: cyan;
+      }
+      .about div h2:hover{
+        border: 1px solid transparent;
+        background-color: cyan;
+        cursor: pointer;
+        color: black;
+      }
+      .tools h1{
+        font-size: 35px;
+        text-align: center;
+        color: cyan;
+        margin-bottom: 20px;
+        margin-top: 70px;
+        font-family: "gruppo",sans-serif;
+      }
+      .tools .lang h2{
+        font-size: 28px;
+        color: white;
+        margin-left: 20%;
+        margin-bottom: 30px;
+        font-family: "PT Mono",sans-serif;
+      }
+      .tools .lang ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .tools .lang ul li{
+        border: 1px solid cyan;
+        border-radius: 25px;
+        padding: 25px 40px;
+        transition: all 1s;
+        color: cyan;
+        width: 250px;
+        transition: all 1s;
+        text-align: center;
+        margin-left: 25%;
+        margin-bottom: 20px;
+        font-family: "PT Mono",sans-serif;
+      }
+      .tools .lang ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+      }
+      .tools .otl h2{
+        margin-left: 20%;
+        color: white;
+        font-family: "Rajdhani",sans-serif;
+      }
+      .tools .otl ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 25%;
+        font-family: "Rajdhani",sans-serif;
+        width: 50%;
+        align-items: center;
+        color: white;
+      }
+      .tools .otl ul li{
+        margin: 0;
+        padding: 0;
+        border: 1px solid cyan;
+        border-radius: 25px;
+        padding: 25px 40px;
+        transition: all 1s;
+        color: cyan;
+        width: 250px;
+        transition: all 1s;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: default;
+        font-family: "PT Mono",sans-serif;
+      } 
+      .tools .otl ul li:hover{
+        text-decoration: underline;
+      }
+    </style>
+    <div class="blur"></div>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center border-top"
+      style="height: 50px;"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="text-muted">&copy; 2023 Elementor.Inc</span>
+      </div>
+    </footer>
+    <script src="about.js"></script>
+  </body>
+</html>
