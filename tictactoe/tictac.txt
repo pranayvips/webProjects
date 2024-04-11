@@ -1,0 +1,43 @@
+choose the modes:
+computer mode     ----hard easy
+player mode
+
+
+scoreboard
+
+
+undo feature
+
+reset button
+
+
+
+On first startup :
+choose a name 
+choose avatar
+
+
+Additional feature :
+add a name for x and o player
+show the names of all players
+chatbox
+send message to developer
+
+
+coloring the boxes after the win
+
+
+BACK WORK-----------
+
+save the data of the user matches
+
+keyboard inputs
+
+
+
+
+
+
+
+#good function
+leaderboard

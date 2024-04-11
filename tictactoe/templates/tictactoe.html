@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="/static/tictac.css" />
+    <link
+      rel="shortcut icon"
+      href="/static/images/icons.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Righteous&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="name">
+        <p>Let's start with your name !</p>
+        <input
+          type="text"
+          placeholder="Write your name"
+          id="name"
+          autocomplete="off"
+        />
+        <button id="next">next</button>
+        <p class="error">
+          <u><strong>ERROR </strong></u>:
+          <em>Please enter a valid name len>3.</em>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="top-nav"
+          name="1"
+        >
+          <title>Account</title>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="top-nav"
+          name="2"
+        >
+          <title>Notification</title>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mode top-nav"
+          name="3"
+        >
+          <title>Mode</title>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="chat top-nav"
+          title="Chat"
+          name="4"
+        >
+          <title>Chat</title>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="top-nav"
+          name="5"
+        >
+          <title>Feedback</title>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
+          />
+        </svg>
+      </div>
+      <div class="play">
+        <div class="top">
+          <div>
+            <p>X <span class="current-score">-</span></p>
+            <p>O <span class="current-score">-</span></p>
+          </div>
+          <nav class="turn-level">
+            <p class="turn" title="Tell's whose turn is this">X's turn</p>
+            <p class="level" title="Click to change level">#EASY</p>
+          </nav>
+        </div>
+        <div class="boards">
+          <div class="board">
+            <button val="0"></button>
+            <button val="1"></button>
+            <button val="2"></button>
+            <button val="3"></button>
+            <button val="4"></button>
+            <button val="5"></button>
+            <button val="6"></button>
+            <button val="7"></button>
+            <button val="8"></button>
+          </div>
+        </div>
+        <div class="bottom" id="reset">
+          <button class="reset">Reset</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="reset-svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="account tab-er" name="1">
+          <h1>PROFILE</h1>
+          <div class="data" id="acc-data">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="back">
+            <button>Go Back</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="notification tab-er" name="2">
+          <h1>Notifications</h1>
+          <div class="noti">
+            <h1>Review!</h1>
+            <p>If you liked our project don't forget to rate us.</p>
+            <button>X</button>
+          </div>
+          <div class="noti">
+            <h1>Hi there!</h1>
+            <p>We welcome you here.</p>
+            <button>X</button>
+          </div>
+
+          <div class="back">
+            <button>Go Back</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="modes tab-er" name="3">
+          <h1>Play Mode</h1>
+          <form>
+            <div id="mode-comp-parent">
+              <input type="checkbox" id="mode-comp" />
+              <p>Computer Mode</p>
+            </div>
+            <ul>
+              <li id="mode-easy-parent">
+                <input type="radio" id="mode-easy" />
+                <p>Easy</p>
+              </li>
+              <li id="mode-hard-parent">
+                <input type="radio" id="mode-hard" />
+                <p>Hard</p>
+              </li>
+              <li id="mode-imp-parent" style="display: none">
+                <input type="radio" id="mode-imp" />
+                <p>No Luck (impossible)</p>
+              </li>
+            </ul>
+            <div id="mode-player-parent">
+              <input type="checkbox" id="mode-player" />
+              <p>Player Mode</p>
+            </div>
+          </form>
+
+          <div class="back">
+            <button>Go Back</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="chats tab-er" name="4">
+          <h1>Chat</h1>
+          <div class="page">
+            <div class="chat-show">
+              <div class="chatting">
+                <p>Vikas</p>
+                <p>Hello guzzz</p>
+              </div>
+            </div>
+            <div class="send" id="msg-send">
+              <p title="emoji">&#128521;</p>
+              <input
+                type="text"
+                placeholder="Your message here"
+                id="msg-input"
+                autocomplete="off"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="chat-send"
+              >
+                <title>Send</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="back">
+            <button>Go Back</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="feed tab-er" name="5">
+          <h1>Feedback</h1>
+          <div class="before">
+            <h3>Please rate my project if you liked it!</h3>
+            <div>
+              <p class="feed-choose" name="1">&#128512;</p>
+              <p class="feed-choose" name="2">&#128578;</p>
+              <p class="feed-choose" name="3">&#128528;</p>
+              <p class="feed-choose" name="4">&#128577;</p>
+              <p class="feed-choose" name="5">&#128529;</p>
+            </div>
+            <p class="feed-select">|</p>
+            <!-- <p class="feed-submit">Submit</p> -->
+          </div>
+          <div class="after">
+            <h3>You have already rated us!</h3>
+            <p class="feed-choose"></p>
+            <p class="feed-select"></p>
+          </div>
+          <div class="back">
+            <button>Go Back</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="message">
+      <div class="msg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="msg-show"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+          />
+        </svg>
+
+        <h3 class="msg-show">You Won the match</h3>
+        <p class="msg-show">Hurray you won the match</p>
+        <button id="message-ok" class="msg-show">OK</button>
+      </div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+    <script src="/static/startup.js"></script>
+    <script src="/static/tab.js" defer></script>
+    <script src="/static/feed.js" defer></script>
+    <script src="/static/mode.js" defer></script>
+    <script src="/static/chat.js" defer></script>
+  </body>
+</html>
