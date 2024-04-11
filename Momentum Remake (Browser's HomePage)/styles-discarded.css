@@ -1,0 +1,335 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  user-select: none;
+  font-family: serif;
+}
+
+.tops {
+  padding: 0px;
+  margin: 0px;
+  top: 400px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: inline;
+  height: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tops img {
+  width: 100%;
+  position: fixed;
+  /* filter: blur(2px); */
+  background-size: cover;
+  z-index: -1;
+}
+
+#greet_user {
+  font-size: 65px;
+  color: white;
+  position: relative;
+  display: inline;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  cursor: text;
+  text-shadow: 3px 3px #000;
+  left: 625px;
+  top: 410px;
+  user-select: text;
+}
+
+#greet_user::selection{
+  color: red;
+  text-shadow: 4px 4px blue;
+}
+
+.time {
+  font-size: 140px;
+  position: relative;
+  position: fixed;
+  color: white;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  text-shadow: 4px 4px #000;
+  left: 610px;
+  display: inline;
+  display: inline;
+  height: 150px;
+  margin: 8px 0;
+  outline: none;
+  top: 210px;
+  cursor: text;
+  user-select: text;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.time::selection{
+  color: blue;
+  text-shadow: 4px 4px orange;
+}
+
+.searches {
+  left: 290px;
+}
+
+/* .buttontosub {
+  background-color: rgba(0, 0, 255, 0);
+  position: relative;
+  top: 500px;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(2px) saturate(200%);
+  left: 490px;
+}
+.buttontosub img {
+  background-color: a;
+  width: 15px;
+  padding: 8px;
+  width: 30px;
+  height: 29px;
+  cursor: pointer;
+} */
+
+#searchbar {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  border: 0px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  color: #fff;
+  outline: none;
+  width: 500px;
+  font-weight: 100;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(4px) saturate(180%);
+  padding: 4px;
+  position: relative;
+  left: 540px;
+  text-align: center;
+  border-color: #000;
+  box-shadow: 2px 2px 2px 0 rgb(0, 0, 0);
+  top: 490px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#searchbar:focus {
+  border-color: dodgerblue;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
+  box-shadow: 0 0 5px 0 rgb(255 , 255, 255);
+  background-color: rgba(139, 139, 139, 0.1);
+}
+
+#searchbar:hover {
+ box-shadow: 0 0 15px 0 black;
+}
+
+#searchbar:hover:focus {
+  border-color: dodgerblue;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
+  box-shadow: 0 0 15px 0 rgb(255 , 255, 255);
+  background-color: rgba(139, 139, 139, 0.1);
+}
+
+#searchbar::selection{
+  color: blue;
+  text-shadow: 1px 1px 4px rgb(5, 250, 13);
+}
+
+.search_option1 {
+  background-color: a;
+  width: 0px;
+  height: 0px;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  position: relative;
+  top: 510px;
+  left: 650px;
+}
+
+.search_option1 img {
+  background-color: a;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.search_option1 img:hover{
+  animation: fadein 0.5s;
+}
+
+.search_option2 {
+  background-color: a;
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  position: relative;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  left: 710px;
+  top: 512px;
+}
+
+.search_option2 img {
+  background-color: a;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: relative;
+}
+.search_option2 img:hover{
+  animation: fadein 0.5s;
+}
+
+
+
+.search_option3 {
+  background-color: a;
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  position: relative;
+  left: 770px;
+  top: 510px;
+}
+.search_option3 img {
+  background-color: a;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.search_option3 img:hover{
+  animation: fadein 0.5s;
+}
+
+.search_option4 {
+  background-color: a;
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  position: relative;
+  left: 825px;
+  top: 516px;
+}
+.search_option4 img {
+  background-color: a;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.search_option4 img:hover{
+  animation: fadein 0.5s;
+}
+
+.search_option5 {
+  background-color: a;
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  position: relative;
+  left: 895px;
+  top: 512px;
+}
+.search_option5 img {
+  background-color: a;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  position: relative;
+}
+.search_option5 img:hover{
+  animation: fadein 0.5s;
+}
+
+.quote {
+  position: relative;
+  top: 562px;
+  left: 480px;
+  display: inline;
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  user-select: text;
+  height: 20px;
+}
+#quoteid{
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  display: inline;
+  position: relative;
+  user-select: text;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1x black;
+  /* text-shadow: 3px 3px 3px orange; */
+  cursor: text;
+  left: 75px;
+  overflow: hidden;
+}
+
+#quoteid::selection{
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px darkblue;
+}
+
+#quoteid:hover{
+  animation: fadein 1s;
+}
+
+
+
+.mantra {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: inline;
+  top: 320px;
+  animation: fadein 7s;
+  animation-fill-mode: forwards;
+  left: 190px;
+  text-shadow: 2px 2px 2px black;
+}
+.mantra p {
+  display: inline-block;
+  position: fixed;
+}
+.mantra:hover span {
+  display: none;
+}
+
+.mantra:hover:before {
+  animation: fadein 2s;
+  animation-fill-mode: forwards;
+  content: "Have a good day!";
+  top: 315px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.mantra:active:before {
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+  content: "Welcome, Pranay!";
+  text-shadow: 2px 2px 2px black;
+}
+

@@ -1,0 +1,101 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #00d2db, #00b0fa);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: "microsoft yahei light", sans-serif;
+  text-align: center;
+  margin-bottom: 70px;
+}
+h1::selection {
+  background-color: transparent;
+  color: cyan;
+}
+img {
+  width: 20vh;
+  justify-self: center;
+}
+.bottom {
+  justify-self: center;
+  margin-top: 50px;
+  display: flex;
+  column-gap: 30px;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  padding: 5px 10px;
+  width: 60px;
+  cursor: pointer;
+  border: 0;
+  background-color: #008bf4;
+  border-top: 4px solid #008bf4;
+  border-bottom: 4px solid #015eb8;
+  transition: border-color 0.4s;
+}
+button:hover {
+  border-color: #008bf4;
+}
+#no-box button {
+  transition: all 1s;
+  cursor: default;
+}
+.date {
+  display: block;
+  display: grid;
+  justify-content: center;
+}
+.date img {
+  justify-self: center;
+  margin-bottom: 40px;
+}
+.date input {
+  justify-self: center;
+  border: 0;
+  font-family: "microsoft yahei light", sans-serif;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  background-color: transparent;
+  user-select: none;
+}
+.date input:hover {
+  outline: none;
+}
+.date input:focus {
+  outline: none;
+}
+.date button {
+  width: 100px;
+  margin-top: 20px;
+  justify-self: center;
+}
+
+.container {
+  /* display: none; */
+}
+.date {
+  display: none;
+}
+.okay {
+  display: none;
+}

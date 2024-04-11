@@ -1,0 +1,1 @@
+document.getElementsByClassName('background-image').ondragstart = function() { return false; };
